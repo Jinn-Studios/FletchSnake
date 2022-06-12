@@ -11,7 +11,13 @@ namespace Snake.API
             => Task.FromResult(new APIDetailsDTO());
 
         [HttpPut("start")]
-        public Task<APIDetailsDTO> StartNewGame()
-            => Task.FromResult(new APIDetailsDTO());
+        public Task StartNewGame([FromBody] InstanceDTO gameBoardDetails)
+        {
+            return Task.CompletedTask;
+        }
+
+        [HttpPost("move")]
+        public Task<MoveDTO> MakeAMove([FromBody] InstanceDTO gameBoardDetails)
+            => Task.FromResult(new MoveDTO { move = "up" });
     }
 }
