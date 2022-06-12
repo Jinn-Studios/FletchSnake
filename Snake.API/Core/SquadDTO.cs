@@ -1,6 +1,6 @@
 ﻿namespace Snake.API.Models
 {
-    public class SnakeSquadDTO
+    public class SquadDTO
     {
         public bool allowBodyCollisions { get; set; } = true;
         public bool sharedElimination { get; set; } = true;

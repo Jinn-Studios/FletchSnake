@@ -1,6 +1,6 @@
 ﻿namespace Snake.API.Models
 {
-    public class SnakeBoardInstanceDTO
+    public class BoardInstanceDTO
     {
         public int height { get; set; }
         public int width { get; set; }

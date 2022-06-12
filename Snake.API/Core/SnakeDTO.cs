@@ -11,6 +11,6 @@
         public int length { get; set; }
         public string shout { get; set; }
         public string squad { get; set; }
-        public SnakeDetailsDTO customizations { get; set; }
+        public DetailsDTO customizations { get; set; }
     }
 }

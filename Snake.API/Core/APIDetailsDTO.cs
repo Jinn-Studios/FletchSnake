@@ -1,6 +1,6 @@
 ﻿namespace Snake.API.Models
 {
-    public class SnakeAPIDetailsDTO : SnakeDetailsDTO
+    public class APIDetailsDTO : DetailsDTO
     {
         public string apiversion { get; set; } = "1";
         public string author { get; set; } = "JinnFletch";
