@@ -7,7 +7,11 @@ namespace Snake.API
     public class SnakeApiController : ControllerBase
     {
         [HttpGet]
-        public Task<SnakeBoardDTO> GetSomething()
-            => Task.FromResult(new SnakeBoardDTO());
+        public Task<SnakeAPIDetailsDTO> GetSomething()
+            => Task.FromResult(new SnakeAPIDetailsDTO());
+
+        [HttpPut("start")]
+        public Task<SnakeAPIDetailsDTO> StartNewGame()
+            => Task.FromResult(new SnakeAPIDetailsDTO());
     }
 }
